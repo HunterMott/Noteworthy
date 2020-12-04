@@ -14,7 +14,7 @@ https://wireframe.cc/Ejedg6
 
 ## Component Hierarchy
 
-https://imgur.com/0fpXoS5
+![alttext](https://imgur.com/0fpXoS5)
 
 ## API and Data Sample
 
