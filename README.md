@@ -2,11 +2,11 @@
 
 ## Project Name
 
-The name of your project.
+Noteworthy
 
 ## Project Description
 
-This is a simple productivty app to help increase efficientcy and decrease time waste by allowing you to create a to do list or even take notes!
+This is a simple productivty app built with react to help increase efficientcy and decrease time waste by allowing you to create a to do list or even take notes!
 
 ## Wireframes
 
@@ -93,14 +93,18 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+| Project Prep | H | 3hrs| 3hrs | 3hrs |
+| Working with AirTable | H | 3hrs| 2.5hrs | 2.5hrs |
+| Basic Boilerplate | H | 2hrs | | |
+| Component 1 function | H | 3hrs | | |
+| Component 2 function | H | 3hrs | | |
+| Component 3 function | H | 3hrs | | |
+| Component 4 function | H | 3hrs | | |
+| Component 5 function | H | 3hrs | | |
+| Component 6 function | H | 3hrs | | |
+| Basic styling | H | 4hrs | | |
+| Debugging | H | 3hrs | | |
+| Advanced Style | H | 4hrs | | |
 | | | | | |
 | | | | | |
 | | | | | |
@@ -110,10 +114,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## SWOT Analysis
 
-### Strengths:
+### Strengths: I have a strong understanding of react and JavaScript, I think that will carry me through this project to a solid finished project.
 
-### Weaknesses:
+### Weaknesses: Some more advanced things in react are still a bit iffy, they will create some roadblocks and issues.
 
-### Opportunities:
+### Opportunities: This is a great oppritunity to solidify my react knowledge and really show myself what I have learned.
 
-### Threats:
+### Threats: There is a good chance that I run into issues that take much longer than expected to work around and solve. This could kill a bunch of time.
