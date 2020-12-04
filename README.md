@@ -14,7 +14,7 @@ https://wireframe.cc/Ejedg6
 
 ## Component Hierarchy
 
-https://imgur.com/a/ICgP3of
+https://imgur.com/0fpXoS5
 
 ## API and Data Sample
 
@@ -96,6 +96,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Project Prep | H | 3hrs| 3hrs | 3hrs |
 | Working with AirTable | H | 3hrs| 2.5hrs | 2.5hrs |
 | Basic Boilerplate | H | 2hrs | | |
+| Getting api data to app | H | 2hrs | | |
 | Component 1 function | H | 3hrs | | |
 | Component 2 function | H | 3hrs | | |
 | Component 3 function | H | 3hrs | | |
