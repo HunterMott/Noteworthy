@@ -14,7 +14,7 @@ https://wireframe.cc/Ejedg6
 
 ## Component Hierarchy
 
-![alttext](https://imgur.com/0fpXoS5)
+https://imgur.com/0fpXoS5
 
 ## API and Data Sample
 
@@ -72,8 +72,6 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 - Use a react library.
 
 ## Project Schedule
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
