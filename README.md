@@ -18,8 +18,41 @@ https://imgur.com/a/ICgP3of
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
-
+AirTable
+``` 
+{
+    "records": [
+        {
+            "id": "recruKZZRi8Cs6oIy",
+            "fields": {
+                "todo": "Become a Dancer",
+                "done": "Island Hopping in Thailand",
+                "doing": "Learn to Say \"No\" Without Feeling Guilty"
+            },
+            "createdTime": "2020-12-04T04:18:44.000Z"
+        },
+        {
+            "id": "recnA1f3M3YZJAkzq",
+            "fields": {
+                "todo": "Horseback Riding Through Zimbabwe",
+                "done": "Play Flute",
+                "doing": "Watch 1000 Movies"
+            },
+            "createdTime": "2020-12-04T04:18:44.000Z"
+        },
+        {
+            "id": "recaR39RPIjSDPzb5",
+            "fields": {
+                "todo": "Complete a 5000 Question Survey",
+                "done": "Party all Night Without Stopping For Sleep",
+                "doing": "Become a Doctor"
+            },
+            "createdTime": "2020-12-04T04:18:44.000Z"
+        }
+    ],
+    "offset": "recaR39RPIjSDPzb5"
+}
+```
 ### MVP/PostMVP
 
 The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
