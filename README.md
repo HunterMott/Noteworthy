@@ -23,34 +23,34 @@ AirTable
 {
     "records": [
         {
-            "id": "recruKZZRi8Cs6oIy",
+            "id": "rec9u1rYaNa7Ca78A",
             "fields": {
-                "todo": "Become a Dancer",
-                "done": "Island Hopping in Thailand",
-                "doing": "Learn to Say \"No\" Without Feeling Guilty"
+                "title": "work meeting",
+                "date": "11/28/20",
+                "note": "Sometimes that's just the way it has to be. Sure, there were probably other options, but he didn't let them enter his mind. It was done and that was t..."
             },
-            "createdTime": "2020-12-04T04:18:44.000Z"
+            "createdTime": "2020-12-04T04:21:20.000Z"
         },
         {
-            "id": "recnA1f3M3YZJAkzq",
+            "id": "recdh4NmVMMAZWKoa",
             "fields": {
-                "todo": "Horseback Riding Through Zimbabwe",
-                "done": "Play Flute",
-                "doing": "Watch 1000 Movies"
+                "title": "school lecture",
+                "date": "11/29/20",
+                "note": "She sat in the darkened room waiting. It was now a standoff. He had the power to put her in the room, but not the power to make her repent. It wasn't ..."
             },
-            "createdTime": "2020-12-04T04:18:44.000Z"
+            "createdTime": "2020-12-04T04:21:51.000Z"
         },
         {
-            "id": "recaR39RPIjSDPzb5",
+            "id": "rec2IBEWS1WiHc2ZE",
             "fields": {
-                "todo": "Complete a 5000 Question Survey",
-                "done": "Party all Night Without Stopping For Sleep",
-                "doing": "Become a Doctor"
+                "title": "personal progress",
+                "date": "11/30/20",
+                "note": "What was beyond the bend in the stream was unknown. Both were curious, but only one was brave enough to want to explore. That was the problem. There w..."
             },
-            "createdTime": "2020-12-04T04:18:44.000Z"
+            "createdTime": "2020-12-04T04:22:11.000Z"
         }
     ],
-    "offset": "recaR39RPIjSDPzb5"
+    "offset": "rec2IBEWS1WiHc2ZE"
 }
 ```
 ### MVP/PostMVP
