@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Footer from './components/Footer'
+import Header from './components/Header'
+import Home from './components/Home'
+import Notes from './components/Notes'
+import Todo from './components/Todo'
+import axios from 'axios';
+import { useEffect, useState } from 'react'
+import {baseURL, config} from './services'
+
+
 
 function App() {
+  const [data, setData] = useState([])
+  useEffect(() => {
+    const getData = async () => {
+      const resp = await axios.get(baseURL, config);
+      setData(resp.data.records)
+
+      console.log(resp.data.records)
+    };
+    getData();
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
     </div>
   );
 }
