@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
+import '../styles/header.css'
 
 const Nav = () => {
   return (
-    <nav>
-      <Button href="/" color="primary">
+    <nav className='navbuttons'>
+      <Button varient="contained" href="/" color="primary">
         Home
       </Button>
       <Button href="/todo" color="primary">

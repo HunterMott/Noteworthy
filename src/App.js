@@ -7,23 +7,19 @@ import Todo from './components/Todo'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import {baseURL, config} from './services'
-
+import {Route} from 'react-router-dom'
 
 
 function App() {
-  const [data, setData] = useState([])
-  useEffect(() => {
-    const getData = async () => {
-      const resp = await axios.get(baseURL, config);
-      setData(resp.data.records)
-
-      console.log(resp.data.records)
-    };
-    getData();
-  }, []);
   return (
     <div className="App">
       <Header />
+      <Route exact path='/notes'>
+        <Notes />
+      </Route>
+      <Route exact path='/todo'>
+        <Todo />
+      </Route>
     </div>
   );
 }

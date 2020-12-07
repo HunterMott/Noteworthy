@@ -1,0 +1,15 @@
+.header-main {
+  background-color: grey;
+  margin: 0px;
+  display: flex;
+}
+.app-title {
+  margin-top: 0px;
+}
+.navbuttons {
+  align-content: flex-end;
+  
+}
+Button {
+  align-self: flex-end;
+}
