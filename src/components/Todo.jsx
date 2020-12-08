@@ -23,8 +23,8 @@ const Todo = () => {
       status: "todo",
     };
     await axios.post(taskURL, { fields }, config);
-    setToggle(!toggle)
-    setTitle('')
+    setToggle(!toggle);
+    setTitle("");
   };
 
   useEffect(() => {
@@ -43,7 +43,6 @@ const Todo = () => {
     getTodo();
     getDoing();
     getDone();
-    console.log(todo);
   }, [toggle]);
   return (
     <Grid container>
@@ -52,7 +51,7 @@ const Todo = () => {
         <form onSubmit={handleSubmit}>
           <TextField
             onChange={(e) => setTitle(e.target.value)}
-            fullWidth="true"
+            fullWidth={true}
             required
             id="outlined-required"
             label="Title"
@@ -61,7 +60,7 @@ const Todo = () => {
             value={title}
           />
           <Button
-            fullWidth="true"
+            fullWidth={true}
             color="primary"
             variant="contained"
             type="submit"
@@ -72,7 +71,7 @@ const Todo = () => {
       </Grid>
       <Grid item xs={3}>
         <h1>Todo</h1>
-        <TaskList list={todo} />
+        <TaskList list={todo} setToggle={setToggle} />
       </Grid>
       <Grid item xs={3}>
         <h1>Doing</h1>

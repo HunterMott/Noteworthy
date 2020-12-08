@@ -12,11 +12,19 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
 const Notes = () => {
+
   const [notes, setNotes] = useState([]);
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [note, setNote] = useState("");
   const [toggle, setToggle] = useState(true);
+
+  const handleDelete = async (id) => {
+    const deleteURL = `${baseURL}/${id}`
+    await axios.delete(deleteURL, config)
+    setToggle(!toggle);
+  }
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
@@ -24,6 +32,9 @@ const Notes = () => {
       date,
       note,
     };
+
+
+
     await axios.post(baseURL, { fields }, config);
     setToggle(!toggle);
     setTitle("");
@@ -47,8 +58,11 @@ const Notes = () => {
       borderColor: "#cfd8dc",
       borderRadius: 12,
     },
+
   });
+
   const classes = useStyles();
+
   return (
     <div>
       <Grid container
@@ -67,38 +81,35 @@ const Notes = () => {
           >
             <TextField
               onChange={(e) => setTitle(e.target.value)}
-              fullWidth="true"
+              fullWidth={true}
               required
               id="outlined-required"
               label="Title"
-              defaultValue=""
               variant="outlined"
               value={title}
             />
             <TextField
               onChange={(e) => setDate(e.target.value)}
-              fullWidth="true"
+              fullWidth={true}
               id="outlined-required"
               label="Date"
-              defaultValue=""
               variant="outlined"
               value={date}
             />
             <TextField
               onChange={(e) => setNote(e.target.value)}
-              fullWidth="true"
+              fullWidth={true}
               required
               id="filled-multiline-static"
               label="Note"
               multiline
               rows={8}
               rowsMax={24}
-              defaultValue=""
               variant="outlined"
               value={note}
             />
             <Button
-              fullWidth="true"
+              fullWidth={true}
               color="primary"
               variant="contained"
               type="submit"
@@ -122,7 +133,8 @@ const Notes = () => {
               <h2>{note.fields.title}</h2>
               <h4>{note.fields.date}</h4>
               <h3>{note.fields.note}</h3>
-              <IconButton aria-label="delete">
+              <IconButton aria-label="delete"
+              onClick={() => handleDelete(note.id)}>
                 <DeleteIcon fontSize="small" />
               </IconButton>
             </Card>
