@@ -10,8 +10,11 @@
 }
 .navbuttons {
   align-content: flex-end;
-  
 }
 Button {
   align-self: flex-end;
+}
+a {
+  color: inherit;
+  text-decoration:none; 
 }

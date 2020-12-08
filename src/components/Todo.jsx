@@ -54,7 +54,7 @@ const Todo = () => {
             fullWidth={true}
             required
             id="outlined-required"
-            label="Title"
+            label="Task"
             defaultValue=""
             variant="outlined"
             value={title}

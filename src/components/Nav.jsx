@@ -5,13 +5,13 @@ import '../styles/header.css'
 const Nav = () => {
   return (
     <nav className='navbuttons'>
-      <Button varient="contained" href="/" color="primary">
+      <Button variant="contained" href="/" color="primary">
         Home
       </Button>
-      <Button href="/todo" color="primary">
+      <Button variant="contained" href="/todo" color="primary">
         To-Do
       </Button>
-      <Button href="/notes" color="primary">
+      <Button variant="contained" href="/notes" color="primary">
         Notes
       </Button>
     </nav>
