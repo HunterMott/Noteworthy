@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -14,15 +15,15 @@ const Home = () => {
         </Grid>
         <Grid item sm={6}>
           <h3>Click this button to check out your To-Do list!</h3>
-          <Button href="/todo" color="primary">
-            To-Do
-          </Button>
+          <Link to="/todo">
+            <Button color="primary">To-Do</Button>
+          </Link>
         </Grid>
         <Grid item sm={6}>
           <h3>Click this button to check out your Notes!</h3>
-          <Button href="/notes" color="primary">
-            Notes
-          </Button>
+          <Link to="/notes">
+            <Button color="primary">Notes</Button>
+          </Link>
         </Grid>
       </Grid>
     </div>
