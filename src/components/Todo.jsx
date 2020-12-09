@@ -45,7 +45,7 @@ const Todo = () => {
     getDone();
   }, [toggle]);
   return (
-    <Grid container>
+    <Grid container spacing={0}>
       <Grid item xs={3}>
         <h1>Form</h1>
         <form onSubmit={handleSubmit}>

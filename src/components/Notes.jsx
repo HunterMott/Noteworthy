@@ -24,7 +24,7 @@ const Notes = () => {
     await axios.delete(deleteURL, config)
     setToggle(!toggle);
   }
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
@@ -68,6 +68,7 @@ const Notes = () => {
       <Grid container
         direction="column"
         alignItems="center"
+        spacing={3}
       >
         <Grid item sm={12}>
           <h1>Notes</h1>

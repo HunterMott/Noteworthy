@@ -7,19 +7,28 @@ import Todo from './components/Todo'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import {baseURL, config} from './services'
-import {Route} from 'react-router-dom'
+import {Route, Link, Switch} from 'react-router-dom'
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Route exact path='/notes'>
+      <Switch>
+        <Route exact path='/'>
+          <Home />
+        </Route>
+      <Route path='/notes'>
         <Notes />
       </Route>
-      <Route exact path='/todo'>
+      <Route path='/todo'>
         <Todo />
       </Route>
+      <Route path='/:404'>
+        <h2>You are on the wrong page!</h2>
+        <Link to='/'>Go back home!</Link>
+      </Route>
+      </Switch>
     </div>
   );
 }
