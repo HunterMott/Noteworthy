@@ -32,9 +32,7 @@ const Notes = () => {
       date,
       note,
     };
-
-
-
+    
     await axios.post(baseURL, { fields }, config);
     setToggle(!toggle);
     setTitle("");

@@ -5,16 +5,28 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import "../styles/tasklist.css";
-import axios from 'axios';
-import {config, taskURL} from '../services'
+import axios from "axios";
+import { config, taskURL } from "../services";
+import { useState } from "react";
 
 const TaskList = (props) => {
   let data = props.list.records;
+
   const handleDelete = async (id) => {
-    const deleteURL = `${taskURL}/${id}`
-    await axios.delete(deleteURL, config)
-    props.setToggle((prev) => !prev)
-  }
+    const idURL = `${taskURL}/${id}`;
+    await axios.delete(idURL, config);
+    props.setToggle((prev) => !prev);
+  };
+
+  const handleStatus = async (id, newStatus) => {
+    const idURL = `${taskURL}/${id}`;
+    const fields = {
+      status: newStatus,
+    };
+    await axios.patch(idURL, { fields }, config);
+    props.setToggle((prev) => !prev);
+  };
+
   return (
     <div>
       {data ? (
@@ -28,17 +40,38 @@ const TaskList = (props) => {
               key={todo.id}
             >
               <h4 className="task-title">{todo.fields.title}</h4>
-              <Button size="small" color="primary">Todo</Button>
-              <Button size="small" color="primary">Doing</Button>
-              <Button size="small" color="primary">Done</Button>
-              <IconButton aria-label="delete" onClick={() => handleDelete(todo.id)} >
-                <DeleteIcon fontSize="small" color="primary"/>
+              {todo.fields.status !== 'todo' && <Button
+                size="small"
+                color="primary"
+                onClick={(e) => handleStatus(todo.id, "todo")}
+              >
+                Todo
+              </Button>}
+              {todo.fields.status !== 'doing' && <Button
+                size="small"
+                color="primary"
+                onClick={(e) => handleStatus(todo.id, "doing")}
+              >
+                Doing
+              </Button>}
+              {todo.fields.status !== 'done' && <Button
+                size="small"
+                color="primary"
+                onClick={(e) => handleStatus(todo.id, "done")}
+              >
+                Done
+              </Button>}
+              <IconButton
+                aria-label="delete"
+                onClick={() => handleDelete(todo.id)}
+              >
+                <DeleteIcon fontSize="small" color="primary" />
               </IconButton>
             </Card>
           ))}
         </div>
       ) : (
-        <p>loading</p>
+        <p>loading...</p>
       )}
     </div>
   );

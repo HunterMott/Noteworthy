@@ -75,11 +75,11 @@ const Todo = () => {
       </Grid>
       <Grid item xs={3}>
         <h1>Doing</h1>
-        <TaskList list={doing} />
+        <TaskList list={doing} setToggle={setToggle}/>
       </Grid>
       <Grid item xs={3}>
         <h1>Done</h1>
-        <TaskList list={done} />
+        <TaskList list={done} setToggle={setToggle}/>
       </Grid>
     </Grid>
   );
