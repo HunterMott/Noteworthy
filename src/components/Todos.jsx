@@ -3,7 +3,6 @@ import "../styles/todo.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { taskURL, config, todoURL, doingURL, doneURL } from "../services";
-import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import TaskList from "./TaskList";
 import TextField from "@material-ui/core/TextField";
@@ -55,7 +54,6 @@ const Todo = () => {
             required
             id="outlined-required"
             label="Task"
-            defaultValue=""
             variant="outlined"
             value={title}
           />

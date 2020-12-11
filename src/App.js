@@ -1,12 +1,8 @@
 import './App.css';
-import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/Home'
 import Notes from './components/Notes'
 import Todos from './components/Todos'
-import axios from 'axios';
-import { useEffect, useState } from 'react'
-import {baseURL, config} from './services'
 import {Route, Link, Switch} from 'react-router-dom'
 
 

@@ -1,13 +1,11 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
 import Button from "@material-ui/core/Button";
-import ButtonGroup from "@material-ui/core/ButtonGroup";
 import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import "../styles/tasklist.css";
 import axios from "axios";
 import { config, taskURL } from "../services";
-import { useState } from "react";
 
 const TaskList = (props) => {
   let data = props.list.records;
