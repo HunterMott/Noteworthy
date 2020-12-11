@@ -3,7 +3,7 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/Home'
 import Notes from './components/Notes'
-import Todo from './components/Todo'
+import Todos from './components/Todos'
 import axios from 'axios';
 import { useEffect, useState } from 'react'
 import {baseURL, config} from './services'
@@ -22,7 +22,7 @@ function App() {
         <Notes />
       </Route>
       <Route path='/todo'>
-        <Todo />
+        <Todos />
       </Route>
       <Route path='/:404'>
         <h2>You are on the wrong page!</h2>

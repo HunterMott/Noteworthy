@@ -61,7 +61,7 @@ The functionality will then be divided into two separate lists: MPV and PostMVP.
 
 - Clean and efficent code.
 - Add and remove items on a to do list.
-- Add edit and remove notes in a note section.
+- Add and remove notes in a note section.
 - Navagation bar to get around the site.
 - Styled to look clean and minimal.
 
@@ -93,22 +93,17 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Project Prep | H | 3hrs| 3hrs | 3hrs |
 | Working with AirTable | H | 3hrs| 2.5hrs | 2.5hrs |
-| Basic Boilerplate | H | 2hrs | | |
-| Getting api data to app | H | 2hrs | | |
-| Component 1 function | H | 2hrs | | |
-| Component 2 function | H | 2hrs | | |
-| Component 3 function | H | 2hrs | | |
-| Component 4 function | H | 2hrs | | |
-| Component 5 function | H | 2hrs | | |
-| Component 6 function | H | 2hrs | | |
-| Basic styling | H | 4hrs | | |
-| Debugging | H | 3hrs | | |
-| Advanced Style | H | 4hrs | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
+| Basic Boilerplate | H | 2hrs | 2hrs | |
+| Getting api data to app | H | 2hrs | 3hrs | |
+| Component Nav | H | 2hrs | 3hrs | |
+| Component Header | H | 2hrs | 2hrs | |
+| Component Notes | H | 2hrs | 4hrs | |
+| Component todo | H | 2hrs | 5hrs | |
+| Understandung material-ui | H | 2hrs | 5hrs | |
+| Implementing material-ui | H | 2hrs | 5hrs | |
+| Basic styling | H | 3hrs | 3hrs | |
+| Debugging | H | 3hrs | 5hrs | |
+| Advanced Style | H | 4hrs | 4hrs | |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
