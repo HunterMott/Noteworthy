@@ -104,7 +104,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Basic styling | H | 3hrs | 3hrs | |
 | Debugging | H | 3hrs | 5hrs | |
 | Advanced Style | H | 4hrs | 4hrs | |
-| Total | H | 6hrs| 51.5hrs | 5hrs |
+| Total | H | 6hrs| 51.5hrs | 47.5hrs |
 
 ## SWOT Analysis
 
